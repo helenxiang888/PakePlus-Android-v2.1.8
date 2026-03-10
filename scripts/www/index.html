@@ -28,17 +28,17 @@
 
         body {
             background-color: var(--bg-light);
-            padding: 15px;
+            padding: 8px;
             min-height: 100vh;
-            font-size: 16px; /* 基础字体放大，适配手机 */
+            font-size: 12px;
         }
 
         .calculator {
-            max-width: 100%; /* 手机端占满宽度 */
+            max-width: 100%;
             width: 100%;
             background: var(--bg-white);
-            padding: 30px 20px; /* 减少左右内边距，适配手机 */
-            border-radius: 16px;
+            padding: 15px 12px;
+            border-radius: 10px;
             box-shadow: var(--shadow-lg);
             position: relative;
             overflow: hidden;
@@ -51,18 +51,18 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 8px;
+            height: 4px;
             background: linear-gradient(90deg, var(--primary), var(--primary-light));
         }
 
         h1 {
             text-align: center;
             color: var(--primary);
-            margin-bottom: 30px;
-            font-size: 24px; /* 标题字体放大 */
+            margin-bottom: 10px;
+            font-size: 18px;
             font-weight: 600;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 8px;
         }
 
         h1::after {
@@ -71,10 +71,10 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
+            width: 50px;
+            height: 2px;
             background: var(--primary-light);
-            border-radius: 3px;
+            border-radius: 2px;
         }
 
         .form-container {
@@ -89,23 +89,23 @@
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 8px;
         }
 
         label {
             display: block;
-            margin-bottom: 10px;
+            margin-bottom: 4px;
             color: var(--text-gray);
             font-weight: 500;
-            font-size: 18px; /* 标签字体放大 */
+            font-size: 13px;
         }
 
         input, select {
             width: 100%;
-            padding: 16px 15px; /* 输入框内边距加大，点击更友好 */
+            padding: 10px 8px;
             border: 1px solid var(--border);
-            border-radius: 8px;
-            font-size: 18px; /* 输入框字体放大 */
+            border-radius: 6px;
+            font-size: 13px;
             color: var(--text-dark);
             transition: all 0.3s ease;
             background-color: var(--bg-white);
@@ -114,30 +114,30 @@
         input:focus, select:focus {
             outline: none;
             border-color: var(--primary-light);
-            box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+            box-shadow: 0 0 0 2px rgba(49, 130, 206, 0.1);
         }
 
         input::placeholder {
             color: var(--text-light);
-            font-size: 16px;
+            font-size: 12px;
         }
 
         button {
             width: 100%;
-            padding: 18px; /* 按钮内边距加大 */
+            padding: 12px;
             background: linear-gradient(135deg, var(--primary), var(--primary-light));
             color: white;
             border: none;
-            border-radius: 8px;
-            font-size: 20px; /* 按钮字体放大 */
+            border-radius: 6px;
+            font-size: 14px;
             font-weight: 500;
             cursor: pointer;
             transition: all 0.3s ease;
-            margin-top: 10px;
+            margin-top: 6px;
         }
 
         button:hover {
-            transform: translateY(-2px);
+            transform: translateY(-1px);
             box-shadow: var(--shadow);
             background: linear-gradient(135deg, var(--primary-light), var(--primary));
         }
@@ -147,43 +147,43 @@
         }
 
         .result {
-            margin-top: 30px;
-            padding: 20px;
+            margin-top: 10px;
+            padding: 12px;
             background-color: rgba(49, 130, 206, 0.05);
-            border-radius: 12px;
+            border-radius: 8px;
             display: none;
             border: 1px solid rgba(49, 130, 206, 0.1);
         }
 
         .result h2 {
-            font-size: 22px; /* 结果标题放大 */
+            font-size: 16px;
             color: var(--primary);
-            margin-bottom: 20px;
-            padding-bottom: 15px;
+            margin-bottom: 8px;
+            padding-bottom: 8px;
             border-bottom: 1px solid rgba(49, 130, 206, 0.15);
             font-weight: 600;
         }
 
         .input-summary {
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 15px;
-            border-radius: 8px;
-            margin-bottom: 20px;
+            padding: 8px;
+            border-radius: 6px;
+            margin-bottom: 8px;
             border: 1px solid var(--border);
         }
 
         .input-summary h3 {
-            font-size: 18px; /* 输入信息标题放大 */
+            font-size: 13px;
             color: var(--text-gray);
-            margin-bottom: 12px;
+            margin-bottom: 6px;
             font-weight: 600;
         }
 
         .input-row {
             display: flex;
             justify-content: space-between;
-            padding: 8px 0;
-            font-size: 18px; /* 输入反显字体放大 */
+            padding: 2px 0;
+            font-size: 12px;
         }
 
         .input-label {
@@ -197,81 +197,75 @@
 
         .result-grid {
             display: grid;
-            grid-template-columns: 1fr; /* 手机端单列布局更友好 */
-            gap: 15px;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 8px;
         }
 
         .result-item {
             display: flex;
             flex-direction: column;
-            padding: 10px 0;
+            padding: 4px 0;
         }
 
         .result-label {
             color: var(--text-light);
-            font-size: 18px; /* 结果标签字体放大 */
-            margin-bottom: 5px;
+            font-size: 12px;
+            margin-bottom: 2px;
         }
 
         .result-value {
             color: var(--text-dark);
             font-weight: 600;
-            font-size: 20px; /* 结果数值字体放大 */
+            font-size: 13px;
         }
 
         .total-container {
             grid-column: 1 / -1;
-            padding-top: 15px;
+            padding-top: 8px;
             border-top: 1px solid rgba(49, 130, 206, 0.1);
-            margin-top: 10px;
-            display: flex;
-            flex-direction: column; /* 手机端总收益和利率上下排列 */
-            gap: 15px;
-            align-items: flex-start;
+            margin-top: 6px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
         }
 
         .total-item {
-            width: 100%;
+            text-align: center;
         }
 
         .highlight {
             color: var(--secondary);
-            font-size: 22px; /* 高亮数值进一步放大 */
+            font-size: 14px;
             font-weight: 700;
         }
 
         .back-btn {
             background: linear-gradient(135deg, #718096, #4a5568);
-            margin-top: 20px;
+            margin-top: 8px;
             display: none;
         }
 
-        /* 免责声明样式 */
         .disclaimer {
-            margin-top: 25px;
+            margin-top: 8px;
             text-align: center;
-            font-size: 16px; /* 免责声明字体放大 */
+            font-size: 11px;
             color: var(--text-light);
-            padding: 10px 0;
+            padding: 6px 0;
         }
 
-        /* 响应式适配 - 仅针对大屏手机/平板微调 */
-        @media (min-width: 768px) {
+        @media (max-width: 375px) {
+            body {
+                padding: 6px;
+            }
             .calculator {
-                max-width: 600px;
-                padding: 40px;
+                padding: 12px 8px;
             }
-            .result-grid {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            input, select {
+                padding: 8px 6px;
             }
-            .total-container {
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-            .total-item {
-                text-align: center;
-                flex: 1;
+            button {
+                padding: 10px;
+                font-size: 13px;
             }
         }
     </style>
@@ -313,7 +307,6 @@
         <div class="result" id="result">
             <h2>计算结果</h2>
             
-            <!-- 输入内容反显区域 -->
             <div class="input-summary" id="inputSummary">
                 <h3>输入信息</h3>
                 <div class="input-row">
@@ -329,7 +322,7 @@
                     <span class="input-value" id="summaryLevel"></span>
                 </div>
                 <div class="input-row">
-                    <span class="input-label">原存款利率：</span>
+                    <span class="input-label">存款利率：</span>
                     <span class="input-value" id="summaryRate"></span>
                 </div>
             </div>
@@ -344,16 +337,14 @@
                     <span class="result-value" id="baseInterest"></span>
                 </div>
                 <div class="result-item">
-                    <span class="result-label">积分回馈活动（元）</span>
+                    <span class="result-label">积分商城活动（元）</span>
                     <span class="result-value" id="activity1"></span>
                 </div>
                 <div class="result-item">
-                    <span class="result-label">资产提升回馈（元）</span>
+                    <span class="result-label">资产提升活动（元）</span>
                     <span class="result-value" id="activity2"></span>
                 </div>
-               
                 
-                <!-- 总收益和综合年利率 -->
                 <div class="total-container">
                     <div class="total-item">
                         <span class="result-label">总收益（元）</span>
@@ -366,10 +357,8 @@
                 </div>
             </div>
             
-            <!-- 返回按钮 -->
             <button class="back-btn" id="backBtn">返回重新计算</button>
             
-            <!-- 修正后的免责声明 -->
             <div class="disclaimer">仅限内部使用，结果仅供参考</div>
         </div>
     </div>
@@ -381,12 +370,11 @@
         const formContainer = document.getElementById('formContainer');
         const resultContainer = document.getElementById('result');
         
-        // 监听计算按钮点击事件
+        // 监听事件
         calculateBtn.addEventListener('click', calculateProfit);
-        // 监听返回按钮点击事件
         backBtn.addEventListener('click', resetCalculator);
 
-        // 客户级别配置 - 利率：一年1.4%、二年1.5%、三年1.8%
+        // 客户级别配置
         const customerConfig = {
             normal: { name: '普通客户', rate1: 1.4, rate2: 1.5, rate3: 1.8 },
             vip: { name: '贵宾客户', rate1: 1.4, rate2: 1.5, rate3: 1.8 },
@@ -401,7 +389,7 @@
             // 获取输入值
             const amount = parseFloat(document.getElementById('amount').value) || 0;
             const period = parseInt(document.getElementById('period').value);
-            const customerLevel = document.getElementById('customerLevel').value;
+            let customerLevel = document.getElementById('customerLevel').value;
             const levelName = customerConfig[customerLevel].name;
             
             // 期限名称和对应利率
@@ -435,16 +423,18 @@
             document.getElementById('summaryAmount').textContent = amount.toLocaleString('zh-CN', {minimumFractionDigits: 2});
             document.getElementById('summaryPeriod').textContent = periodName;
             document.getElementById('summaryLevel').textContent = levelName;
-            document.getElementById('summaryRate').textContent = originalRate + '%'; // 显示原存款利率
+            document.getElementById('summaryRate').textContent = originalRate + '%';
 
             // 计算各部分收益
-            const activity1Profit = calculateActivity1(amount); // 积分回馈活动收益
-            const baseInterest = calculateBaseInterest(amount, period, customerLevel); // 基础利息
-            const activity2Profit = calculateActivity2(amount, period, customerLevel); // 资产提升回馈收益
+            const activity1Profit = calculateActivity1(amount);
+            // 统一使用普通级别计算基础利息
+            const baseInterest = calculateBaseInterest(amount, period, 'normal');
+            // 统一使用普通级别计算资产提升回馈
+            const activity2Profit = calculateActivity2(amount, period, 'normal');
             
             // 总收益和综合利率
             const totalProfit = activity1Profit + baseInterest + activity2Profit;
-            const totalRate = (totalProfit / amount / period) * 100; // 年化利率
+            const totalRate = (totalProfit / amount / period) * 100;
 
             // 格式化显示结果
             const formatOptions = { 
@@ -469,28 +459,22 @@
         }
 
         /**
-         * 重置计算器（返回重新计算）
+         * 重置计算器
          */
         function resetCalculator() {
-            // 展开表单区域
             formContainer.classList.remove('collapsed');
-            // 隐藏结果区域和返回按钮
             resultContainer.style.display = 'none';
             backBtn.style.display = 'none';
-            // 滚动到表单顶部
             formContainer.scrollIntoView({ behavior: 'smooth' });
         }
 
         /**
-         * 计算积分回馈活动收益（秦贝转换为元）
-         * @param {number} amount 存款金额（元）
-         * @returns {number} 积分回馈总收益（元）
+         * 计算积分回馈活动收益
          */
         function calculateActivity1(amount) {
             const tenThousand = amount / 10000;
             let qinbeiPerWan = 0;
 
-            // 根据档位确定每万元回馈秦贝数
             if (amount >= 10000 && amount < 50000) {
                 qinbeiPerWan = 1080;
             } else if (amount >= 50000 && amount < 200000) {
@@ -501,86 +485,44 @@
                 qinbeiPerWan = 1800;
             }
 
-            // 总秦贝数转换为元（100秦贝=1元）
             const totalQinbei = tenThousand * qinbeiPerWan;
             return totalQinbei / 100;
         }
 
         /**
          * 计算基础利息
-         * @param {number} amount 存款金额（元）
-         * @param {number} period 期限（1/2/3年）
-         * @param {string} level 客户级别
-         * @returns {number} 基础利息（元）
          */
         function calculateBaseInterest(amount, period, level) {
             let rate = 0;
             switch(period) {
                 case 1:
-                    rate = customerConfig[level].rate1 / 100; // 一年期1.4%
+                    rate = customerConfig[level].rate1 / 100;
                     break;
                 case 2:
-                    rate = customerConfig[level].rate2 / 100; // 二年期1.5%
+                    rate = customerConfig[level].rate2 / 100;
                     break;
                 case 3:
-                    rate = customerConfig[level].rate3 / 100; // 三年期1.8%
+                    rate = customerConfig[level].rate3 / 100;
                     break;
             }
             return amount * rate * period;
         }
 
         /**
-         * 计算资产提升回馈收益（修复三年期逻辑：仅单笔>200万才有返现）
-         * @param {number} amount 存款金额（元）
-         * @param {number} period 期限（1/2/3年）
-         * @param {string} level 客户级别
-         * @returns {number} 资产提升回馈总收益（元）
+         * 计算资产提升回馈收益（普通级别规则）
          */
         function calculateActivity2(amount, period, level) {
+            // 强制使用普通级别规则，忽略传入的level参数
             const tenThousand = amount / 10000;
             let rewardPerWan = 0;
 
-            // 不同客户级别和期限的回馈规则
-            switch(level) {
-                case 'normal':
-                    if (period === 1) { // 普通客户仅一年期返现
-                        if (amount >= 100000 && amount < 500000) rewardPerWan = 20;
-                        else if (amount >= 500000 && amount < 3000000) rewardPerWan = 35;
-                        else if (amount >= 3000000) rewardPerWan = 40;
-                    }
-                    // 普通客户二年/三年期不返现
-                    break;
-                case 'vip':
-                    if (period === 1) {
-                        rewardPerWan = 25;
-                    } else if (period === 2) {
-                        rewardPerWan = 22;
-                    } else if (period === 3 && amount > 2000000) { // 三年期仅>200万返现
-                        rewardPerWan = 20;
-                    }
-                    break;
-                case 'gold':
-                    if (period === 1) {
-                        rewardPerWan = 30;
-                    } else if (period === 2) {
-                        rewardPerWan = 27;
-                    } else if (period === 3 && amount > 2000000) { // 三年期仅>200万返现
-                        rewardPerWan = 25;
-                    }
-                    break;
-                // 白金、钻石、私行统一规则
-                case 'platinum':
-                case 'diamond':
-                case 'private':
-                    if (period === 1) {
-                        rewardPerWan = 35;
-                    } else if (period === 2) {
-                        rewardPerWan = 25;
-                    } else if (period === 3 && amount > 2000000) { // 三年期仅>200万返现
-                        rewardPerWan = (amount >= 2000000 && amount < 3000000) ? 15 : (amount >= 3000000) ? 30 : 0;
-                    }
-                    break;
+            // 仅使用普通客户的计算规则
+            if (period === 1) { 
+                if (amount >= 100000 && amount < 500000) rewardPerWan = 20;
+                else if (amount >= 500000 && amount < 3000000) rewardPerWan = 35;
+                else if (amount >= 3000000) rewardPerWan = 40;
             }
+            // 普通客户二年/三年期不返现
 
             return tenThousand * rewardPerWan;
         }
